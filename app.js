@@ -3,6 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.send("Welcome to the home page");
+  console.log("server respond at home page");
 });
 const port = process.env.port || 3000;
 app.listen(port, () => {
