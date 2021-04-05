@@ -1,11 +1,10 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send("Welcome to the home page");
+app.get("/", (req, res) => {
+  res.send("Welcome to the home page");
 });
-
-app.listen(3000, ()=> {
-    console.log("server respond")
+const port = process.env.port || 3000;
+app.listen(port, () => {
+  console.log("server respond");
 });
-
